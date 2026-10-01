@@ -3,9 +3,9 @@ name: CI
 on:
   workflow_call:
 
-permissions:
-  contents: read
-  security-events: write
+# permissions:
+#   contents: read
+#   security-events: write
 
 jobs:
   
@@ -25,4 +25,8 @@ jobs:
         uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
+
+
+# ==================== GATE 2 : SAST - Static Application Security Testing ====================
+
+  s

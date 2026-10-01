@@ -10,10 +10,10 @@ on:
       - 'screenshots/**'
       - 'scripts/**'
 
-permissions:
-  contents: read
-  security-events: write
-  id-token: write
+# permissions:
+#   contents: read
+#   security-events: write
+#   id-token: write
 
 
 jobs:
