@@ -87,6 +87,12 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
           cache: maven
+      - name: Set up Node 14
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+      - name: install Snyk CLI
+        run: npm install -g snyk
 
       - name: Run Snyk SCA
         uses: snyk/actions/maven@master
