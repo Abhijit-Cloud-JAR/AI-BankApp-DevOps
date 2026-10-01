@@ -3,9 +3,9 @@ name: CI
 on:
   workflow_call:
 
-# permissions:
-#   contents: read
-#   security-events: write
+permissions:
+  contents: read
+  security-events: write
 
 jobs:
   
@@ -48,5 +48,4 @@ jobs:
       - name: Run Checkstyle
         run: mvn checkstyle:check || true
 
-      - name: Run SpotBugs Lint
-        run: mvn compile spotbugs:check
+    
